@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.logowanie.dodajUzywkownika">
+
+    <EditText
+        android:id="@+id/dodaj_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="username" />
+
+    <EditText
+        android:id="@+id/dodaj_nazwa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="nazwa" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="admin" />
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/dodaj_zatwierdz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dodaj" />
+
+    <Button
+        android:id="@+id/dodaj_anuluj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nie dodaj" />
+</LinearLayout>
